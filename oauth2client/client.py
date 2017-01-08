@@ -2029,7 +2029,7 @@ class OAuth2WebServerFlow(Flow):
             'code': code,
         }
         if self.scope is not None:
-            post_data['scope']: self.scope
+            post_data['scope'] = self.scope
         if self.client_secret is not None:
             post_data['client_secret'] = self.client_secret
         if self._pkce:
